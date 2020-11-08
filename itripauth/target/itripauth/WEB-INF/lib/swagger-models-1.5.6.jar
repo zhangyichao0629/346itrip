@@ -1,0 +1,97 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>北京联通温馨提示</title>
+    <style type="text/css">
+        body p {
+            font-family: "宋体";
+            font-size: 14px;
+            line-height: 24px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .mask {
+            display: none;
+            background-color: black;
+            position: fixed;
+            top: -20px;
+            left: -20px;
+            right: -20px;
+            bottom: -20px;
+            z-index: 100;
+            opacity: 0.7;
+        }
+
+        .info {
+            display: none;
+            background-color: white;
+            position: fixed;
+            z-index: 101;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            -moz-box-shadow: 0px 0px 30px 5px #888888; /* 老的 Firefox */
+            box-shadow: 0px 0px 30px 5px #888888;
+        }
+    </style>
+    <!-- <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script> -->
+    <script src="/js/qrcode.min.js"></script>
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/index.js"></script>
+</head>
+
+<body topmargin="0">
+<table width="960" height="400" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td><img src="/images/index1.jpg" width="960" border="0"/></td>
+    </tr>
+    <tr>
+        <td width="960" height="450" style="background:url('images/index2.jpg') no-repeat;background-size:100%;">
+
+            <table width="760" border="0" align="center" cellpadding="0" cellspacing="0"
+                   style="font-size:15px;line-height: 25px;">
+                <tr>
+                    <!-- <td><span id="qrcode" style="width:240px; height:240px;"></span></td> -->
+                    <td><img src="/images/qcode.png" alt="" style="width:240px; height:240px;"/>
+                    <br>
+                    <strong ><span style="color: red;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;快速恢复</span>上网请手机扫描<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;二维码办理上网终端包</strong>
+                    </td>
+                    <td width="60"></td>
+                    <td>尊敬的客户  &nbsp;&nbsp;<input type="button" value="点击查询宽带号码" id="btn-getCustInfo" onclick="getInfo();"></input>
+                    	<span style="color: red;" id="lab-custInfo"></span>
+                        <br><br>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您通过同一宽带账号同时上网的终端数量（不含路由器、手机、Pad、机顶盒等终端）超过了<a
+                                href="doc/gzkd.pdf" style="color:#0000ff;" title="点击阅读详细">《北京联通公众宽带产品业务须知》</a>中的约定，将会影响所有终端的正常上网，请尽快检查并减少同时接入网络的终端数量，或手机扫描左侧二维码办理相关业务有偿增加上网终端数。若已经无法正常上网，请将同时接入网络的终端数量调整至约定范围内，稍后将自动恢复正常上网（一般不超过2小时）。详情可咨询:
+                        10010<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;工作日咨询热线63060000 (服务时间：9:00-17:00)
+                        <!--  <strong>点击<span style="color: red;">63060000</span>(服务时间：工作日9:00-17:00)</strong>-->
+                        <br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点击 <input type="button" value="收藏" onclick="addFavorite(window.location.href,'北京联通温馨提示');"></input>&nbsp;按钮保存该页面
+                        <a href="doc/QA.html" style="color:#0000ff;" title="点击阅读详细">常见问题解答</a>
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+    <tr>
+        <td><img src="/images/foot.png" width="960" border="0"/></td>
+    </tr>
+    <tr><td><center><br>京ICP备05021558号-5</center></td></tr>
+</table>
+<div class="mask">
+</div>
+<div class="info">
+    <h1>
+        <center><b>&nbsp;&nbsp;&nbsp;&nbsp;手机扫描后请输入宽带号码&nbsp;&nbsp;&nbsp;&nbsp;<br><font color=red>
+                  
+                </font></b></center>
+    </h1>
+</div>
+</body>
+</html>
